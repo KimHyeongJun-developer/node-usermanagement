@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Add User</h1>
+    <form action="/users" , method='POST'>
+        <label for="userName">Name : </label>
+        <input type="text" name="userName" id="userName" placeholder="Type Your Name">
+        <br>
+        <label for=" userAge">age : </label>
+        <input type="text" name="userAge" id="userAge" placeholder="Type Your Age">
+        <br>
+        <label for=" userEmail">Email : </label>
+        <input type="text" name="userEmail" id="userEmail" placeholder="Type Your Email">
+        <br>
+        <label for=" userSex">Sex : </label>
+        <select name="userSex" id="userSex">
+            <option value="man">man</option>
+            <option value="woman">woman</option>
+        </select>
+        <br>
+        <button>Add</button>
+    </form>
+    <a href="/users">back</a>
+</body>
+
+</html>

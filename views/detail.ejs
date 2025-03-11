@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail</title>
+</head>
+
+<body>
+    <h1>
+        <%= userDetail.userName %>
+    </h1>
+    <ul>
+        <li> Name : <%= userDetail.userName %>
+        </li>
+        <li>
+            Age : <%= userDetail.userAge %>
+        </li>
+        <li>
+            Email : <%= userDetail.userEmail %>
+        </li>
+        <li>
+            sex : <%= userDetail.userSex%>
+        </li>
+        </li>
+    </ul>
+    <a href="/users">Back</a>
+    <a href="/users/<%=userDetail._id%>/edit">Update</a>
+    <form action="/users/<%=userDetail._id%>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
+</body>
+
+</html>

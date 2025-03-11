@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update UserInfo</title>
+</head>
+
+<body>
+    <h1>
+        Update <%=updateUser.userName%>
+    </h1>
+    <form action="/users/<%=updateUser._id%>?_method=PUT" , method='POST'>
+        <label for="userName">Name : </label>
+        <input type="text" name="userName" id="userName" placeholder="Type Your Name" value="<%=updateUser.userName%>">
+        <br>
+        <label for="userAge">age : </label>
+        <input type="text" name="userAge" id="userAge" placeholder="Type Your Age" value="<%=updateUser.userAge%>">
+        <br>
+        <label for="userEmail">Email : </label>
+        <input type="text" name="userEmail" id="userEmail" placeholder="Type Your Email"
+            value="<%=updateUser.userEmail%>">
+        <br>
+        <label for="updateSex">Sex : </label>
+        <select name="updateSex" id="updateSex">
+            <option value="man">man</option>
+            <option value="woman">woman</option>
+        </select>
+        <br>
+        <button name="deleteBtn" id="deleteBtn">Submit</button>
+    </form>
+    <a href="/users/<%=updateUser._id%>">back</a>
+</body>
+
+</html>
